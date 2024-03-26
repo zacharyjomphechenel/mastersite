@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master WebSite</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="master.html">Master Programmer</a></h2>
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="master.html" class="nav_link">Maison</a></li>
+            <li><a href="aboutUs.html" class="nav_link">Notre Histoire</a></li>
+            <li><a href="#" class="nav_link">Projets</a></li>
+            <li><a href="contact.html" class="nav_link">Nous Contacter</a></li>
+            <li><a href="#" class="nav_link" id="connection"><img src="images/compte.png" alt="compte" id="connection-logo"> Se Connecter</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2><b>Master Programmer</b> la meilleure équipe d'informatique du monde !</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, architecto? Consectetur enim obcaecati velit quibusdam iure, perspiciatis accusantium, voluptatibus possimus cum voluptates dolorum optio ab vitae. Praesentium voluptas quia voluptates at aperiam aliquid vitae autem!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, architecto? Consectetur enim obcaecati velit quibusdam iure, perspiciatis accusantium, voluptatibus possimus cum voluptates dolorum optio ab vitae. Praesentium voluptas quia voluptates at aperiam aliquid vitae autem!</p>
+            <div class="buttons">
+              <button class="btn">En savoir plus</button>
+              <button class="btn" onclick="window.location = 'contact.html'">Nous Contacter</button>
+            </div>
+          </div>
+          <div class="column">
+            <img src="images/logo.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="vague" class="curveImg" />
+      </section>
+    </main>
+
+    <footer>
+      <p>® MasterProgrammer</p> 
+      <p>Tout droits reservé</p>
+    </footer>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master WebSite</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="master.html">Master Programmer</a></h2>
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="master.html" class="nav_link">Maison</a></li>
+            <li><a href="#" class="nav_link">AboutUs</a></li>
+            <li><a href="#" class="nav_link">Projets</a></li>
+            <li><a href="#" class="nav_link">Nous Contactez</a></li>
+            <li><a href="#" class="nav_link" id="connection"><img src="images/compte.png" alt="compte" id="connection-logo"> Se Connecter</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="row container">
+        <div class="column">
+          <img src="images/logo.png" alt="heroImg" class="hero_img" />
+        </div>
+          <div class="column">
+            <h2>Il était une fois...</h2>
+            <p>Depuis notre accident qui à été d’aller chez Fab” (Orbit 3D), nous avons eu quelques séquelles positives en ce qui est de nos connaissances. Nous avons même pris une photo avec Fabien (Orbit 3D) et je n'arrête pas d’y penser à chaque instant de la journée. Depuis Fabien, mes nuits ne sont plus les mêmes, je suis toujours en quête d’accomplissement en en ce qui est d’imprimer des objets en 3D. Je rêverais d'être une imprimante 3D (Orbit 3D). C’est un plaisir d’avoir pu infiltrer le domicile de Fabien (Entreprise pro) et je suis content d’avoir pu parler avec un homme de cette envergure. Le père fondateur de l’impression plastique, du rayonnement UV et des machines connectées. Je tiens à faire un gros big up au divan présent dans son usine (garage) qui a su faire reposer nos jambes après 20 longues minutes debout (difficile). Autrement, je n’ai pas particulièrement aimé les prothèses dentaire mais vue que c’est Fabien (pro), je peux bien laisser passer pour une fois au chalet (no gay references). Pour terminer le premier argument, je tiens à m’inspirer pour mon parcours de vie à celui de Fabien, grand visionnaire de l’impression avec du plastique. Finalement, bien que mon explication soit vraiment tournée vers Fabien, mon expérience dans son entreprise (garage) à été spectaculaire et très positive à nos cerveaux de jeunes master programmer. Forever</p>
+            <div class="buttons">
+              <button class="btn">En savoir plus</button>
+              <button class="btn">Contactez les BGs</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>® MasterProgrammer</p> 
+      <p>Tout droits reservé</p>
+    </footer>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
